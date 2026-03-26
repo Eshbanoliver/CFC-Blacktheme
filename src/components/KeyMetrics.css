@@ -43,16 +43,16 @@
     linear-gradient(45deg, #111111 0%, #1a1a1a 50%, #222222 100%),
     linear-gradient(-45deg, #0a0a0a 0%, #151515 50%, #1a1a1a 100%);
   background-size: 200% 200%, 150% 150%, 100% 100%;
-  background-position: 0% 0%, 100% 100%, 50% 50%;
+  background-position: 50% 50%, 0% 0%, 100% 100%;
   background-blend-mode: multiply, overlay, normal;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border: 2px solid rgba(248, 210, 153, 0.2);
+  border: 2px solid rgba(248, 210, 153, 0.5);
   box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.25),
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    0 30px 60px rgba(0, 0, 0, 0.35),
+    0 15px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .metric-card-v2::before {
@@ -68,29 +68,23 @@
     radial-gradient(circle at 40% 40%, rgba(248, 210, 153, 0.08) 0%, transparent 50%);
   z-index: -1;
   transition: all 0.6s ease;
-  transform: scale(0.8) rotate(0deg);
-  opacity: 0;
+  transform: scale(1.2) rotate(90deg);
+  opacity: 1;
   animation: floatPattern 6s ease-in-out infinite;
 }
 
 @keyframes floatPattern {
-  0%, 100% { transform: scale(0.8) rotate(0deg); }
-  50% { transform: scale(1) rotate(180deg); }
+  0%, 100% { transform: scale(1.2) rotate(90deg); }
+  50% { transform: scale(1.3) rotate(180deg); }
 }
 
 .metric-card-v2:hover {
-  transform: translateY(-12px) scale(1.02);
-  background-position: 50% 50%, 0% 0%, 100% 100%;
-  border-color: rgba(248, 210, 153, 0.5);
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(248, 210, 153, 0.8);
   box-shadow: 
-    0 30px 60px rgba(0, 0, 0, 0.35),
-    0 15px 30px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-
-.metric-card-v2:hover::before {
-  transform: scale(1.2) rotate(90deg);
-  opacity: 1;
+    0 35px 70px rgba(0, 0, 0, 0.45),
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .metric-icon {
@@ -103,10 +97,17 @@
   align-items: center;
   justify-content: center;
   color: #F8D299;
-  border: 2px solid rgba(248, 210, 153, 0.3);
+  border: 2px solid rgba(248, 210, 153, 0.5);
   box-shadow: 
     0 8px 16px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.metric-card-v2:hover .metric-icon {
+  border-color: rgba(248, 210, 153, 0.8);
+  background: rgba(248, 210, 153, 0.3);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .metric-card-v2 h2 {
