@@ -117,10 +117,10 @@
 .creative-frame-v2 .main-img {
   width: 100%;
   border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(26, 1, 38, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s ease;
   display: block;
-  border: 4px solid #6B46C1;
+  border: 4px solid #0a0a0a;
 }
 
 .creative-frame-v2:hover .main-img {
@@ -143,17 +143,17 @@
   padding: 1.25rem 1.75rem !important;
   border-radius: 20px !important;
   background: #ffffff !important;
-  box-shadow: 0 15px 45px rgba(26, 1, 38, 0.15) !important;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15) !important;
   animation: float 4s ease-in-out infinite;
   z-index: 100 !important;
-  border: 1px solid rgba(26, 1, 38, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
   width: max-content !important;
 }
 
 .icon-circle {
   width: 45px !important;
   height: 45px !important;
-  background: rgba(128, 74, 138, 0.1) !important;
+  background: rgba(10, 10, 10, 0.1) !important;
   border-radius: 50% !important;
   display: flex !important;
   align-items: center !important;
@@ -215,7 +215,7 @@
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   display: block;
-  background: linear-gradient(135deg, #6B46C1, #9333EA);
+  background: linear-gradient(135deg, #0a0a0a, #2a2a2a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -266,8 +266,8 @@
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   background: white;
   border-radius: 30px;
-  border: 4px solid #6B46C1;
-  box-shadow: 0 30px 60px rgba(107, 70, 193, 0.12);
+  border: 4px solid #0a0a0a;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -291,13 +291,13 @@
 .user-avatar {
   width: 65px;
   height: 65px;
-  background: linear-gradient(135deg, #6B46C1, #9333EA);
+  background: linear-gradient(135deg, #0a0a0a, #2a2a2a);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 8px 20px rgba(107, 70, 193, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .rating {
@@ -355,7 +355,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #6B46C1;
+  border: 2px solid #0a0a0a;
   background: transparent;
   padding: 0;
   cursor: pointer;
@@ -363,9 +363,9 @@
 }
 
 .dot.active {
-  background: #6B46C1;
+  background: #0a0a0a;
   transform: scale(1.4);
-  box-shadow: 0 0 15px rgba(107, 70, 193, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .testimonials-bottom {
@@ -424,4 +424,3 @@
     right: 15px !important;
   }
 }
-

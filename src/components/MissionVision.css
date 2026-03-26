@@ -18,17 +18,17 @@
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   border-radius: 32px;
-  background: linear-gradient(135deg, #1a0126 0%, #3a0353 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   color: #ffffff;
   border: 1px solid rgba(248, 210, 153, 0.1);
-  box-shadow: 0 15px 45px rgba(26, 1, 38, 0.3);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
 .mission-vision-card-v2:hover {
   transform: translateY(-15px) scale(1.02);
   border-color: rgba(248, 210, 153, 0.4);
-  box-shadow: 0 30px 60px rgba(128, 74, 138, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .mission-vision-card-v2::before {

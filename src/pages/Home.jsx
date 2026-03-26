@@ -124,17 +124,17 @@ const Home = () => {
                  <div style={{
                    width: '45px',
                    height: '45px',
-                   backgroundColor: 'rgba(128, 74, 138, 0.15)',
+                   backgroundColor: 'rgba(10, 10, 10, 0.1)',
                    borderRadius: '50%',
                    display: 'flex',
                    alignItems: 'center',
                    justifyContent: 'center',
                    flexShrink: 0
                  }}>
-                    <ShoppingBag size={20} color="#3A0353" />
+                    <ShoppingBag size={20} color="#0a0a0a" />
                  </div>
                  <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <h4 style={{ margin: '0 0 4px 0', color: '#1a0126', fontSize: '1.1rem', fontWeight: 700 }}>Premium Quality</h4>
+                    <h4 style={{ margin: '0 0 4px 0', color: '#0a0a0a', fontSize: '1.1rem', fontWeight: 700 }}>Premium Quality</h4>
                     <p style={{ margin: 0, color: 'gray', fontSize: '0.9rem' }}>Guaranteed Materials</p>
                  </div>
               </div>
@@ -146,7 +146,7 @@ const Home = () => {
                 left: '-20px',
                 width: '100%',
                 height: '100%',
-                border: '5px solid #3A0353',
+                border: '5px solid #0a0a0a',
                 borderRadius: '30px',
                 zIndex: -1,
                 pointerEvents: 'none'

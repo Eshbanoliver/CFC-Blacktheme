@@ -62,12 +62,12 @@
   gap: 1.8rem;
   padding: 2.2rem;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba(58, 3, 83, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .contact-card:hover {
   border-color: var(--secondary) !important;
-  box-shadow: 0 15px 35px rgba(58, 3, 83, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .icon-wrapper {
@@ -80,7 +80,7 @@
   flex-shrink: 0;
   color: #ffffff;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-  box-shadow: 0 8px 20px rgba(58, 3, 83, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .circle-glow {
@@ -152,20 +152,20 @@
   border-radius: 14px;
   color: var(--primary);
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(58, 3, 83, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .social-link:hover {
   background: var(--primary);
   color: #ffffff;
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(58, 3, 83, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .contact-form-wrapper {
   padding: 4.5rem 4rem;
   border: 1px solid rgba(248, 210, 153, 0.2);
-  box-shadow: 0 40px 100px -20px rgba(58, 3, 83, 0.12);
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.12);
   position: relative;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.8);
@@ -229,7 +229,7 @@
   width: 100%;
   padding: 1.35rem 1.35rem 1.35rem 3.5rem;
   background: #ffffff;
-  border: 1.5px solid rgba(58, 3, 83, 0.08);
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   color: var(--text);
   font-size: 1.1rem;
@@ -324,7 +324,7 @@
   height: 550px;
   border-radius: 40px;
   overflow: hidden;
-  box-shadow: 0 30px 60px -20px rgba(58, 3, 83, 0.15);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(248, 210, 153, 0.2);
 }
 
@@ -344,7 +344,7 @@
   backdrop-filter: blur(15px);
   border-radius: 30px;
   border: 1px solid white;
-  box-shadow: 0 20px 40px rgba(58, 3, 83, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .overlay-badge {
@@ -445,7 +445,7 @@
     box-shadow: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid rgba(58, 3, 83, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .contact-card {

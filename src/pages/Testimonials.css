@@ -49,7 +49,7 @@
 .blob-1 {
   width: 500px;
   height: 500px;
-  background: #a855f7;
+  background: #3a3a3a;
   top: 10%;
   left: -250px;
   animation: float-blob 20s infinite alternate;
@@ -58,7 +58,7 @@
 .blob-2 {
   width: 400px;
   height: 400px;
-  background: #ec4899;
+  background: #333333;
   bottom: 20%;
   right: -200px;
   animation: float-blob 15s infinite alternate-reverse;
@@ -80,7 +80,7 @@
 /* Modern Testimonial Card Design - Light Theme */
 .testimonial-modern-card {
   background: #ffffff;
-  border: 2px solid rgba(58, 3, 83, 0.8); /* High visibility purple outline */
+  border: 2px solid rgba(0, 0, 0, 0.8); /* High visibility black outline */
   border-radius: 2.5rem;
   padding: 3rem;
   display: flex;
@@ -89,7 +89,7 @@
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(58, 3, 83, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial-modern-card::before {
@@ -99,8 +99,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* Purple radiant gradient flowing from bottom right to top left */
-  background: radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.15), transparent 70%);
+  /* Dark radiant gradient flowing from bottom right to top left */
+  background: radial-gradient(circle at bottom right, rgba(10, 10, 10, 0.08), transparent 70%);
   opacity: 0;
   transition: all 0.6s ease;
   z-index: 1;
@@ -109,9 +109,9 @@
 
 .testimonial-modern-card:hover {
   transform: translateY(-15px) scale(1.02);
-  border-color: var(--primary); /* Stronger purple on hover */
+  border-color: var(--primary); /* Stronger black on hover */
   background: #ffffff;
-  box-shadow: 0 30px 60px -20px rgba(58, 3, 83, 0.15);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-modern-card:hover::before {
@@ -170,7 +170,7 @@
   align-items: center;
   gap: 1.5rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(58, 3, 83, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10;
 }
@@ -202,7 +202,7 @@
 }
 
 .author-info h4 {
-  color: var(--primary); /* Purple color for name */
+  color: var(--primary); /* Black color for name */
   font-size: 1.25rem;
   margin: 0 0 5px 0;
   font-weight: 700;
@@ -258,5 +258,3 @@
     font-size: 1.15rem;
   }
 }
-
-

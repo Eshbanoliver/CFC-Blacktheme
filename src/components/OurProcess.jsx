@@ -32,8 +32,8 @@ const OurProcess = () => {
       icon: <Ruler size={28} />,
       decorIcon: <Ruler size={48} />,
       bigIcon: <ScanLine size={56} strokeWidth={1.5} />,
-      color: '#A855F7',
-      gradient: 'linear-gradient(135deg, #A855F7, #7C3AED)',
+      color: '#3a3a3a',
+      gradient: 'linear-gradient(135deg, #3a3a3a, #222222)',
     },
     {
       number: '04',
@@ -52,8 +52,8 @@ const OurProcess = () => {
       icon: <Sparkles size={28} />,
       decorIcon: <Sparkles size={48} />,
       bigIcon: <BadgeCheck size={56} strokeWidth={1.5} />,
-      color: '#6B46C1',
-      gradient: 'linear-gradient(135deg, #6B46C1, #9333EA)',
+      color: '#0a0a0a',
+      gradient: 'linear-gradient(135deg, #0a0a0a, #1a1a1a)',
     },
   ];
 

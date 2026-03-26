@@ -18,7 +18,7 @@
   position: relative;
   border-radius: 30px;
   overflow: visible; /* To allow decorative elements to shine */
-  box-shadow: 0 25px 50px -12px rgba(58, 3, 83, 0.15);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 }
 
 .about-image .main-img {
@@ -36,7 +36,7 @@
   left: 0;
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, var(--theme-purple) 0%, transparent 60%);
+  background: radial-gradient(circle, var(--primary) 0%, transparent 60%);
   opacity: 0.15;
   border-radius: 50%;
   z-index: -1;
@@ -61,7 +61,7 @@
   left: -15px;
   width: 80px;
   height: 80px;
-  background-color: var(--theme-purple);
+  background-color: var(--primary);
   opacity: 0.1;
   border-radius: 20px;
   transform: rotate(-15deg);

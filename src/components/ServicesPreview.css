@@ -96,7 +96,7 @@
   bottom: 1.5rem;
   left: 1.5rem;
   right: 1.5rem;
-  background: rgba(58, 3, 83, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   padding: 1.5rem;
