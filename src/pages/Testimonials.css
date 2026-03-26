@@ -1,0 +1,262 @@
+.testimonials-page {
+  overflow-x: hidden;
+  position: relative;
+  background: #ffffff; /* White background */
+}
+
+/* Hero Section inherited from index.css (.hero-subpage) */
+.testimonials-hero.hero-subpage {
+  /* Using standard global styles */
+  position: relative;
+  z-index: 10;
+}
+
+.testimonials-hero .hero-title {
+  color: #ffffff !important;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.testimonials-hero .hero-description {
+  color: rgba(255, 255, 255, 0.9) !important;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonials-grid-section {
+  position: relative;
+  padding: 8rem 0 10rem 0;
+  background: #ffffff; /* Ensure white background for the grid */
+}
+
+/* Decorative Blobs */
+.decor-blobs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.08; /* Lower opacity for white background */
+}
+
+.blob-1 {
+  width: 500px;
+  height: 500px;
+  background: #a855f7;
+  top: 10%;
+  left: -250px;
+  animation: float-blob 20s infinite alternate;
+}
+
+.blob-2 {
+  width: 400px;
+  height: 400px;
+  background: #ec4899;
+  bottom: 20%;
+  right: -200px;
+  animation: float-blob 15s infinite alternate-reverse;
+}
+
+@keyframes float-blob {
+  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  100% { transform: translate(100px, 150px) rotate(180deg) scale(1.2); }
+}
+
+.all-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Modern Testimonial Card Design - Light Theme */
+.testimonial-modern-card {
+  background: #ffffff;
+  border: 2px solid rgba(58, 3, 83, 0.8); /* High visibility purple outline */
+  border-radius: 2.5rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(58, 3, 83, 0.05);
+}
+
+.testimonial-modern-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Purple radiant gradient flowing from bottom right to top left */
+  background: radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.15), transparent 70%);
+  opacity: 0;
+  transition: all 0.6s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.testimonial-modern-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  border-color: var(--primary); /* Stronger purple on hover */
+  background: #ffffff;
+  box-shadow: 0 30px 60px -20px rgba(58, 3, 83, 0.15);
+}
+
+.testimonial-modern-card:hover::before {
+  opacity: 1;
+}
+
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.quote-badge {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--secondary), var(--accent)); /* Golden gradient */
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary); /* Contrast color */
+  transform: rotate(-5deg);
+  transition: transform 0.4s ease;
+  box-shadow: 0 8px 15px rgba(245, 158, 81, 0.2);
+}
+
+.testimonial-modern-card:hover .quote-badge {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 12px 25px rgba(245, 158, 81, 0.4);
+}
+
+.rating-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.testimonial-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4a5568;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 0 2rem 0;
+  flex-grow: 1;
+  position: relative;
+  z-index: 10;
+}
+
+/* Author Section - Eyecatchy Layout */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(58, 3, 83, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.author-avatar-wrapper {
+  position: relative;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 1.25rem;
+  background: #f8f9fa;
+  border: 2px solid var(--secondary); /* Golden border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s ease;
+}
+
+.testimonial-modern-card:hover .author-avatar {
+  border-color: var(--accent);
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 20px rgba(245, 158, 81, 0.1);
+}
+
+.author-info h4 {
+  color: var(--primary); /* Purple color for name */
+  font-size: 1.25rem;
+  margin: 0 0 5px 0;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.author-info p {
+  color: var(--accent); /* Golden color for role */
+  font-size: 0.75rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* Bottom Glow Accent - Golden */
+.testimonial-modern-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary), var(--accent));
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-50%);
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.testimonial-modern-card:hover::after {
+  width: 60%;
+}
+
+
+@media (max-width: 992px) {
+  .all-testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+
+@media (max-width: 480px) {
+  .testimonial-modern-card {
+    padding: 2.5rem 2rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+  }
+
+  .author-info h4 {
+    font-size: 1.15rem;
+  }
+}
+
+
